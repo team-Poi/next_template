@@ -1,5 +1,13 @@
 # THE CODE DESIGN
 
+## How to use?
+
+```sh
+yarn exec degit team-poi/next_template 프로젝트명;
+cd 프로젝트명;
+yarn install;
+```
+
 ## 변수명, 함수명
 
 - 이름은 한국어로.
