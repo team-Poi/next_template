@@ -6,15 +6,14 @@ export default function Home() {
   let [imageLoaded, setImageLoaded] = useState(false);
 
   const 이미지로딩_완료 = () => {
-    console.log("Wa sans");
     setImageLoaded(true);
   };
 
   useEffect(() => {
     if (imageLoaded) return;
-    let image = new Image();
-    image.src = "/assets/images/poi.png";
-    image.addEventListener("load", 이미지로딩_완료);
+    let 이미지 = new Image();
+    이미지.src = "/assets/images/poi.png";
+    이미지.addEventListener("load", 이미지로딩_완료);
   }, [imageLoaded]);
 
   if (!imageLoaded) return <></>;
